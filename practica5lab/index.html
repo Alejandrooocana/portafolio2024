@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 5 Lab | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/iconoibero.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5 pt-3">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-center">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introducción a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-2">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 5: ESP32 Entradas y salidas digitales</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/alex.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Alejandro Ortiz Ocaña</div>
+                                <div class="text-muted">Ing. Mecatrónica</div>
+                            </div>
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/emilia.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Emilia Gómez Murillo</div>
+                                <div class="text-muted">Ing. Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Febrero 29, 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Redes</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/img7.jpeg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">
+                            A lo largo de esta práctica se buscará conocer, identificar y comprobar el funcionamiento de las entradas y salidas digitales en el módulo NodeMCU ESP32, para poder tener un previo conocimiento en futuras prácticas.
+                         </p>
+                        <p id="intro">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                            <p class="fs-6 mb-4">La placa de desarrollo NodeMCU-32 38-pin ESP32 WiFi es una herramienta muy potente para el prototipado rápido de proyectos con IoT(Internet de la cosas), asi mismo es una serie de SoC (por sus siglas en inglés, System on Chip) de módulos de bajo costo y bajo consumo de energía creado por Espressif Systems. </p>
+                            <p class="fs-6 mb-4"> A su vez el ESP32 tiene conexión bluetooth y wifi, por lo que es una placa ideal para un sin fin de proyectos, que nos permite programar sistemas tan sencillos o complicados como se nos ocurra, es por esta razón que es importante conocer cómo se utiliza para poder implementarlos de una manera adecuada a nuestros circuitos.</p>
+                        </p>
+
+                            
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <ul>
+                            <li>Node MCU ESP32</li>
+                            <li>Leds</li>
+                            <li>Resistencias de 2020 Ohms</li>
+                            <li>4 botones</li>
+                            <li>4 resistencias de 1K Ohm</li>
+                            <li>Protoboard</li>
+                            <li>Cables macho macho</li>
+                        </ul>
+                        </p>
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                       
+                        
+                        <p id="diseño">
+                        <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>                        
+                        <p class="fs-6 mb-4">Para el diseño del circuito con el que trabajaríamos toda la práctica, nos apoyamos del software de TinkerCAD para poder realizar las conexiones necesarias, tal como se muestra a continuación.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img1.jpeg" alt="..." /></figure>
+                      
+                        <p id="construccion">
+                        <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción y Simulación</h1>
+                        <p class="fs-6 mb-4">Para la construcción del circuito requerido, utilizamos una protoboard tal cual como se muestra en la imagen pasada y conectamos todo con cables DuPont.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img2.png" alt="..." /></figure>
+
+                        <p class="fs-6 mb-4">Para la primera actividad correspondiente al programa de encendido de un Led mediante programación, se realizó el siguiente código</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img3.jpeg" alt="..." /></figure>
+                        
+                        <p class="fs-6 mb-4">Para el segundo código, donde se desarrolló un programa de apagado de un Led mediante programación, se realizó el siguiente código</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img4.jpeg" alt="..." /></figure>
+                        
+                        <p class="fs-6 mb-4">Para la tercera actividad donde se buscó encender y apagar un led mediante retardos, se realizó el siguiente código:</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img5.jpeg" alt="..." /></figure>
+                        
+                        <p class="fs-6 mb-4">Para la cuarta actividad donde se buscó desarrollar un sistema de encendido y apagado de un led mediante botones, se realizó lo siguiente:</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img6.jpeg" alt="..." /></figure>
+                        
+                        <p class="fs-6 mb-4">Para la quinta actividad donde se realizó un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR, se utilizó el siguiente código:</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img7.jpeg" alt="..." /></figure>
+                        
+                        <p class="fs-6 mb-4">Para la actividad final donde se pedía el encendido y apagado de un led según la condicional AND y utilizando botones, se utilizó el siguiente código:</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img8.jpg" alt="..." /></figure>
+                        
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p>Programa de encendido de un LED mediante programación:</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="videos/video1.mp4" type="video/mp4">
+                        </video></figure>
+                       
+                        <p>Programa de apagado de un LED mediante programación:</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="videos/video2.mp4" type="video/mp4">
+                        </video></figure>
+                        <p>Programa de encendido y apagado de un LED mediante retardos:</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="videos/video3.mp4" type="video/mp4">
+                        </video></figure>
+                        <p>Sistema de encendido y apagado de un LED mediante el uso de botones:</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="videos/video4.mp4" type="video/mp4">
+                        </video></figure>
+                        <p>Sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR:</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="videos/video5.mp4" type="video/mp4">
+                        </video></figure>
+                        <p>Sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND:</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="videos/video6.mp4" type="video/mp4">
+                        </video></figure>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Al finalizar la práctica, pudimos concluir que nos pareció bastante enriquecedora ya que son teniendo las bases de la programación para este módulo, nos abre las puertas a realizar distintos proyectos que requieran de salidas y entradas digitales y programables.</p>
+                        <p class="fs-6 mb-4">También pudimos concluir que la práctica se realizó con éxito ya que se obtuvieron los resultados que esperábamos en cada una de las actividades.</p>
+                            
+                            
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Devsia. (s. f.). Programador Nodemcu ESP32 38 pines  WIFI + Bluetooth 4.2 Ble. https://electronicathido.com/detallesProducto.php?id=VEhMVmxLTFIxSnFDQU5JNzAyNTZBZz09  </p>
+                        <p class="fs-6 mb-4">Carmenate, J. G. (2022, 7 marzo). ESP32 Wifi + Bluetooth en un solo lugar. Programarfacil Arduino y Home Assistant. https://programarfacil.com/esp8266/esp32/#Caracteristicas_y_especificaciones_del_ESP32</p>
+                            
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">No hay descargables.</p>
+                        
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2024</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
