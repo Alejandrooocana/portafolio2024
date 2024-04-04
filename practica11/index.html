@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Investigación JS | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/iconoibero.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5 pt-3">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-center">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Introducción a Ing. Mecatrónica</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-2">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Investigación JS</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/alex.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Alejandro Ortiz Ocaña</div>
+                                <div class="text-muted">Ing. Mecatrónica</div>
+                            </div>
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/emilia.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Emilia Gómez Murillo</div>
+                                <div class="text-muted">Ing. Mecatrónica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Marzo 21, 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Redes</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    
+                    <p class="fs-6 mb-4"></p>   
+                    
+                    <embed src="assets/Investigación JS_Alex Emilia.pdf" type="application/pdf" width="100%" height="600px" />
+
+                    <p>Desarrolla en tu página web un ejemplo de un formulario utilizando la etiqueta input.</p>
+                    <form action="/#">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                    
+                    
+                   
+                    <h3 style="text-align: center;">Muestrario de elementos input en HTML</h3>
+                    <table>
+                        <tr>
+                            <th>Nombre del elemento</th>
+                            <th>Forma de escribirse en HTML</th>
+                            <th>Definición</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Button</strong></td>
+                            <td>&lt;input type="button"&gt;</td>
+                            <td>Un botón interactivo.</td>
+                            <td><input type="button" value="Click me"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Checkbox</strong></td>
+                            <td>&lt;input type="checkbox"&gt;</td>
+                            <td>Una casilla de verificación.</td>
+                            <td><input type="checkbox" id="check1" name="check1"><label for="check1">Check me</label></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Color</strong></td>
+                            <td>&lt;input type="color"&gt;</td>
+                            <td>Un control para seleccionar un color.</td>
+                            <td><input type="color" value="#ff0000"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Date</strong></td>
+                            <td>&lt;input type="date"&gt;</td>
+                            <td>Un control para seleccionar una fecha.</td>
+                            <td><input type="date" value="2024-03-30"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Datetime-local</strong></td>
+                            <td>&lt;input type="datetime-local"&gt;</td>
+                            <td>Un control para seleccionar una fecha y hora local.</td>
+                            <td><input type="datetime-local" value="2024-03-30T12:00"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Email</strong></td>
+                            <td>&lt;input type="email"&gt;</td>
+                            <td>Un control para ingresar una dirección de correo electrónico.</td>
+                            <td><input type="email" value="user@example.com"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>File</strong></td>
+                            <td>&lt;input type="file"&gt;</td>
+                            <td>Un control para seleccionar un archivo.</td>
+                            <td><input type="file"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hidden</strong></td>
+                            <td>&lt;input type="hidden"&gt;</td>
+                            <td>Un campo oculto que no se muestra en la interfaz.</td>
+                            <td><input type="hidden" value="hidden value"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Image</strong></td>
+                            <td>&lt;input type="image"&gt;</td>
+                            <td>Una imagen como botón de envío de formulario.</td>
+                            <td><input type="image" src="assets/iconoProfile.jpg" alt="Submit" style="width: 50px;"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Month</strong></td>
+                            <td>&lt;input type="month"&gt;</td>
+                            <td>Un control para seleccionar un mes y año.</td>
+                            <td><input type="month" value="2024-03"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Number</strong></td>
+                            <td>&lt;input type="number"&gt;</td>
+                            <td>Un control para ingresar un número.</td>
+                            <td><input type="number" value="42"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Password</strong></td>
+                            <td>&lt;input type="password"&gt;</td>
+                            <td>Un campo de contraseña.</td>
+                            <td><input type="password" value="password"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Radio</strong></td>
+                            <td>&lt;input type="radio"&gt;</td>
+                            <td>Un botón de selección única dentro de un grupo.</td>
+                            <td><input type="radio" id="radio1" name="radio" value="option1"><label for="radio1">Option 1</label></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Range</strong></td>
+                            <td>&lt;input type="range"&gt;</td>
+                            <td>Un control para seleccionar un valor de un rango.</td>
+                            <td><input type="range" min="0" max="100" value="50"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Reset</strong></td>
+                            <td>&lt;input type="reset"&gt;</td>
+                            <td>Un botón para restablecer el formulario a sus valores predeterminados.</td>
+                            <td><input type="reset" value="Reset"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Search</strong></td>
+                            <td>&lt;input type="search"&gt;</td>
+                            <td>Un campo de búsqueda.</td>
+                            <td><input type="search" placeholder="Search..."></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Submit</strong></td>
+                            <td>&lt;input type="submit"&gt;</td>
+                            <td>Un botón de envío de formulario.</td>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tel</strong></td>
+                            <td>&lt;input type="tel"&gt;</td>
+                            <td>Un control para ingresar un número de teléfono.</td>
+                            <td><input type="tel" value="1234567890"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Text</strong></td>
+                            <td>&lt;input type="text"&gt;</td>
+                            <td>Un campo de texto de una línea.</td>
+                            <td><input type="text" value="Text input"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Time</strong></td>
+                            <td>&lt;input type="time"&gt;</td>
+                            <td>Un control para seleccionar una hora.</td>
+                            <td><input type="time" value="12:00"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>URL</strong></td>
+                            <td>&lt;input type="url"&gt;</td>
+                            <td>Un control para ingresar una URL.</td>
+                            <td><input type="url" value="https://www.example.com"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Week</strong></td>
+                            <td>&lt;input type="week"&gt;</td>
+                            <td>Un control para seleccionar una semana y año.</td>
+                            <td><input type="week" value="2024-W14"></td>
+                        </tr>
+                    </table>
+
+                    
+                    <p>Elabora en Replit un programa básico "Hola mundo" con JS, describe el funcionamiento y elementos utilizados.</p>
+                    <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img1.png" alt="..." /></figure>
+                        
+                    <a href="https://replit.com/@alejandro00/primerProgramajs#index.html">Ir al Replit</a>
+                   <p></p> 
+                    
+                    
+                    
+                        
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2024</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+    <style>
+        
+        h1{
+            text-align: center;        
+        }
+        table {
+        table-layout: fixed;
+        width: 100%;
+        border: 3px ;
+        background-color: #f2f2f2;
+        }
+        th{
+            background-color: gray;
+        }
+        thead th:nth-child(1) {
+        width: 30%;
+        }
+    
+        thead th:nth-child(2) {
+        width: 20%;
+        }
+    
+        thead th:nth-child(3) {
+        width: 15%;
+        }
+    
+        thead th:nth-child(4) {
+        width: 35%;
+        }
+    
+        th,td {
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        td{
+            background-color: rgba(232, 228, 228, 0.947);
+        }
+        tr:hover {background-color: rgba(248, 228, 151, 0.86);}
+        tr:nth-child(even) {background-color: #f2f2f2;}
+    </style>
+</html>
